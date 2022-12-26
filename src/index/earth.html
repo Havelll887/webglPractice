@@ -10,14 +10,17 @@
     <script src="../../libs/jquery-1.6.4.js"></script>
     <script src="../../libs/jquery.mousewheel.js"></script>
     <script src="../../libs/RequestAnimationFrame.js"></script>
-    <!-- <script src="../../sim/sim.js"></script> -->
-    <script src="../../tool/threetool.js"></script>
+    <script src="../../sim/sim.js"></script>
+    <!-- <script src="../../tool/threetool.js"></script> -->
     <script src="../js/earth.js"></script>
     <script>
         let renderer, scene, camera, mesh = null;
         function initScene() {
             let container = document.getElementById("container");
             console.log('hhhhh')
+            let app = new EarthApp();
+			app.init({ container: container });
+			app.run();
         }
     </script>
 </head>
@@ -27,5 +30,10 @@
     </div>
 
 </body>
-
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+</style>
 </html>
