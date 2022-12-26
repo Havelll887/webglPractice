@@ -1,0 +1,3 @@
+EarthApp = function () {
+
+}
